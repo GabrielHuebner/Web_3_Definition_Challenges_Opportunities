@@ -286,6 +286,7 @@ When searching for the definition of the web 3.0, it is often also called the se
 As a side note, the term "semantic web" often seems confusing, because it is sometimes used as a synonym for the web 3.0. This term was coined by Tim Berners-Lee, who predicted the possibility of computers to exchange semantic data.\cite{newmedia}
 In this paper, the "semantic web" is not equal to the web 3.0, it is rather a technology that is incorporated into it.\cite{avast}\\
 The metadata (semantic data) in the semantic web, is data which describes data, so that it can be used/categorised by a computer. It can be used to optimize search engines, as well as a variety of other fields. \cite{CLARKE201279}\\
+However this paper will not go into detail about the semantic web, it will rather describe the different technologies used in the web 3.0 and the challenges that arise from these technologies.\\\\
 
 Carly Burdova from avast describes the web 3.0 as follows: \begin{quote}
     "Web 3.0, also known as Web3, is the third generation of the World Wide Web. Web 3.0 is meant to be decentralized, open to everyone (with a bottom-up design), and built on top of blockchain technologies and developments in the Semantic Web, which describes the web as a network of meaningfully linked data."\cite{avast}
@@ -369,23 +370,76 @@ Decentralised applications are built on decentralised networks. They work, by co
     \item They are isolated, that means that an error won't disturb the normal functioning of the network they are run in
 \end{itemize}\cite{ethereumddapps}
 \newpage
-
-\section{The semantic web}
-
-%TODO - lead into next part
-
-%The paper "Make Web3.0 Connected" \cite{connected2022} defines three infrastructural enablers for %the web 3.0:
-%\begin{enumerate}
-%    \item Blockchains, through this technology verifiable computing can be supported
-%    \item Federated / centralised platforms, these should be able to publish verifiable states, %because some functionalities are difficult to implement on a blockchain
-%    \item A secure platform, which serves as a connection between blockchains and platforms
-%\end{enumerate}
-
-
-
-
-\newpage
 \chapter{Challenges of the Web 3.0}
+
+There still are a multitude of challenges to overcome, before the web 3.0 can be realised. The first challenge would be a clear definition of the term, which is not the case at the time of writing this paper, as already mentioned in section 2.2.\\
+This section has a focus on the challenges blockchain technology has yet to overcome, before it can fulfill all the goals, which web 3.0 promises. The paper "A Survey of Blockchain From the Perspectives of Applications, Challenges, and Opportunities" \cite{challengesandapplications2019} provides a great outline for the challenges blockchain technologies face. This paper will expand the outline with recent discoveries and other perspectives, as well as possible solutions to the challenges of the web 3.0.
+
+\subsection{Energy Consumption}
+A major point of blockchain and web 3.0 technologies is their energy consumption. Especially since the current energy crisis has already had an impact on miners of cryptocurrency. For many mining is not feasible anymore, since the energy costs already outweigh the returns miners get from creating new blocks. This in turn lessens the decentralization of a blockchain, since mining at this point is usually only possible for owners of large mining-farms.\\\\
+The current used consensus algorithm in bitcoin is the PoW algorithm. This algorithm has already been proven to be highly unsustainable and it consumes large amounts of energy to run. As many many compete for creating a new block and appending it to the chain a lot of computing power is lost, because of it. This lost computing power can be translated to lost electricity. Since global warming is on the rise and the need for renewable energy rises, this model for a consensus algorithm will not be fruitful in the long run. The website \href{https://ccaf.io/cbeci/index}{ccaf.io} from the University of Cambridge offers a tracker for the energy consumption of bitcoin. The annualised consumption, at the time of writing this paper counts over 109 terawatt hours of electricity. As a comparison, the country Austria with a population of nearly 9 million people as stated on \href{https://www.statistik.at/statistiken/bevoelkerung-und-soziales/bevoelkerung/bevoelkerungsstand/bevoelkerung-zu-jahres-/-quartalsanfang}{statistik.at}, has a annual energy consumption of about 72 terrawatt hours, as stated on \href{https://de.statista.com/statistik/daten/studie/325788/umfrage/stromverbrauch-in-oesterreich/#:~:text=Im%20Jahr%202021%20wurden%20innerhalb,der%20Kraftwerke%20und%20die%20Netzverluste.}{statista.com}, at the time of writing this paper. The "Cambridge Bitcoin Electricity Consumption Index" \href{https://ccaf.io/cbeci/index}{ccaf.io}, also provides data about the greenhouse gas emissions, that are produced by the bitcoin network. The current estimate of annualised emissions are at over 55 megatons of carbon dioxide emissions. This further proves, that a new model for a consensus algorithm is needed, to be more efficient in terms of the energy needed to create new blocks and validate transactions.\\
+An interesting comparison can be made, when bitcoin is compared against standard payment methods with fiat currency, such as a VISA credit card. The Bitcoin network uses far more energy per transaction as the VISA credit card. About 100 000 VISA transactions can be done for the egergy cost of about one third of the amount, that would be needed for a single Bitcoin transaction. \cite{challengesandapplications2019}
+The consensus algorithm that decreases the energy cost of transactions is the PoS algorithm. This is already implemented in a blockchain network known as ethereum. The ethereum network switched to the PoS mechanism on the 15th September 2022. They state, that this switch reduced the energy consumption of the network by 99.95\%. Ethereum merged its already existing blockchain with the "beacon chain", which already ran in parallel to the PoW ethereum blockchain, which ethereum had implemented thus far. They claim that no data has been lost after the merge and together with the reduced energy cost, they also claim to improve the scalability, security and sustainability of the network. This could be a sustainable way to use blockchain technology in the future.\cite{ethereummerge}
+
+%https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8805074
+
+\subsection{Performance and Scalability}
+Since blockchain technologies have gained a huge amount of popularity in the recent years, a factor that needs to be considered is the performance of blockchain networks, as well as the scailability of the systems. The amount of data transferred daily over the world wide web is substantial and ever increasing as more and more users create and consume content. The questions is, if the blockchain technology can satisfy the expectations of users for a highly scaleable network with low latency and high throughput. The scalability trilemma is, that there is always a trade off between security, decentralization and scalability as is shown in Figure 3.1. The ethereum network also addresses this problem. This means, that not all of these three attributes cannot all be implemented at the same time, without one of these attributes being compromised. \cite{ethereumvision}
+
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=10cm,keepaspectratio]{images/trilemma.png}
+	\caption{Scalability trilemma}
+	\label{fig:scalability-trilemma}
+\end{figure}
+
+Another attribute that can be added to the trilemma, which would make it into a quadrilemma, is the aspect of trust, since blockchains, which have trusting parties may implement simpler consensus algorithms in order to achieve a better scalability. \cite{SANKA2021103232}\\
+
+The PoW mechanism of Bitcoin for example offers a high scalability. The Problem is, that it suffers from a high latency and low throughput as a result. This problem arises because a lot of computational power is wasted with the PoW algorithm when miners try to solve a cryptographic puzzle, to append another block to the blockchain and reap the mining rewards. The throughput of Bitcoin is only at about 6-10 transactions per second and a new block is added, on average, within a timeframe of 10 minutes. This creates huge problems, since it is far too slow to allow a large number of transactions to be processed in a reasonable timeframe.Another problem comes with the limited blocksize of a blockchain network. Bitcoin for example offers a blocksize of 1MB per block. This is done to make the blockchain more secure, but it reduces the amount of transactions, which can be written onto a block, making the network slower in the process.\cite{challengesandapplications2019}
+
+Since the Ethereum network has switched from the PoW mechanism to the PoS mechanism, it offers many advantages over the traditional implementation, but there are also the known trade offs with the switch too the new consensus mechanism. As already mentioned the cost for the energy consumption is highly reduced with the PoS algorithm. Another benefit is the higher speed of transactions, where ethereum promises thousands of transactions per second. Some argue that the trade off lies then in the decentralization of the network, however ethereum claims, that that is not the case, since economies of scale do not apply to the PoS mechanism, as they do for the PoW mechanism, making the network more decentralized in the process.\cite{pos}
+
+
+\subsection{Privacy and Ownership}
+Another major point of the web 3.0 and blockchain technologies is privacy. It is common knowledge, that big industries, such as facebook and google sell user data to other companies in order to run their business. As the common saying goes "If there is no product, you are the product". One of the goals of the next generation of the web is to enable better privacy for the users of the web. A way to achieve this goal is with blockchain technologies. The idea behind using a blockchain to enable better privacy for clients, is to store data on the blockchain, rather than on a centralised database. This would mean, that data is then not owned by the owner of the database, but, in the case of a dezentralised network, the data is owned by the creator of the data. However, as already mentioned in the previous chapter, storing the entire content of a website in the blockchain is not feasible, because the blocksize in a blockchain is limited and cannot allow for all data to be hosted on-chain.\\\\
+
+The paper "Decentralizing Privacy: Using Blockchain to Protect Personal Data" \cite{privacy} proposes a solution to this problem, which will be further explained in this chapter. The main aspects of the proposed solution are as follows:
+\begin{itemize}
+    \item Data Ownership - Each user in the system owns and controls their personal data.
+    \item Data Transperency and Auditability - There is complete transperency over which data is collected from each individual user and how this data is accessed
+    \item Fine-grained Access Control - For mobile users it is often the case, that once the access to personal data is granted, the permission to use said personal data cannot be reverted. Access control addresses this issue, by giving users the possibility to revoke these permissions.
+\end{itemize}
+The entities in the proposed solutions are mobile phone users, that want to download data and use applications / services. The miners/nodes are entrusted with the maintanance of the blockchain and with storing the key-value data,in return for their provided computational power, they get certain incentives. The system works by implementing two new types of transactions, namely \( T_{access} \), which is, as the name suggests used for access management and \( T_{data} \), which is used to store data and retrieve it. To better understand this solution an example is provided. A new user, who wants to preserve their privacy, downloads an application that uses the platform proposed in the solution. At the first sign up, the platform generates a new identity and sends it, with all relevant permissions to the underlying blockchain in a access transaction. The data that is sent is encrypted with a shared key and sent with a data transaction to the blockchain. Then the identity is routed to an off-blockchain key-value store. Only a pointer to the data is stored on the blockchain, which is a hash of the data. This is important, because it means, that only a small amount of data needs to be stored on-chain, while the majority of the data is stored off-chain, which tackles the problem described earlier in this chapter. After the user is thus integrated in the system, both the user and the service can now query the data by using the earlier mentioned pointer to the data. For the service the permissions to access the data are checked as well, to ensure that only authorized access is granted. The user can later change the permissions to access their data at any time by using a access transaction.\cite{privacy}
+
+This could be one possible solution to enable better privacy for the users of the world wide web and ensure, that private user data is not accessed without permission.
+
+\subsection{Interoperability}
+Another big topic when it comes to blockchain technology is the interoperability between different implementations. At the time of writing this paper there are already a multitude of different blockchain implementations. The exact number of how many blockchains there are is uncertain, but it can be estimated that there are more than thousand, maybe several thousand implementations of blockchains out there. Thus far, there is no standardised protocoll, that enables different blockchains to communicate and operate with each other. The main application of blockchains, are chains, which are built for the purpose of creating new cryptocurrencys. Arguably, there is some interoperateability provided for cryptocurrency, since they can be exchanged for one another on sites such as \href{https://www.coinbase.com/}{coinbase.com}. However, as far as other web 3.0 applications are concerned, there is still no standard, through which interoperateability can be achieved. \cite{challengesandapplications2019}\\
+
+The paper "Make Web3.0 Connected"\cite{connected2022}, has its focus on the problem of interoperability and will be further discussed in this section.
+
+The paper defines three infrastructural enablers for the web 3.0:
+\begin{enumerate}
+    \item Blockchains, through this technology verifiable computing can be supported
+    \item Federated / centralised platforms, these should be able to publish verifiable states, because some functionalities are difficult to implement on a blockchain
+    \item A secure platform, which serves as a connection between blockchains and platforms
+\end{enumerate}
+
+The focus of the aforementioned paper lies on the third enabler of the web 3.0, the platform, that should connect different blockchains and platforms. They call their interoperability platform the "HyperService". This platform would be powered by a new programming framework, HSL (HyperService Programming Language), for writing cross-chain DApps and UIP (Universal Blockchain Interoperability Protocol) which realizes the operations, which are defined in DApps on blockchains securely.\cite{connected2022}\\
+
+This new technology could make the interoperability between different blockchains possible. If it gains popularity and becomes a standard in the field remais to be seen.
+
+\subsection{Fairness and Security}
+As well as every other technology, that is used on the web, blockchains are also prone to cybersecurity attacks. To mitigate such attacks is always difficult, since it is impossible to foresee all possible angles of attack. Especially in cryptocurrency implementations of blockchains, such attacks could be devastating, since users would not only lose data, but valuable assets as well, which could threaten their livelihood.\\
+A well known and widespread attack on blockchains is the so-called 51\% attack. This attack works, if a attacker or a group of multiple attackers gain a majority of the blockchains hashrate. Once the majority is achieved, the attackers can change vital data that is stored on the blockchain. Another angle of attack is called "Selfish mining", this is done by mining pools, which are several miners, that are joined together to mine blocks more efficiently. The attack works by waiting before broadcasting a successfully mined block to the entire network. The attackers can then mine additional blocks, while regular miners still try to mine a previous block on another branch of the system. Once certain criteria are met, the attackers broadcast the mined blocks to the rest of the network and their blocks get accepted, because they have a higher complexity and length, than the block of regular miners, who have still mined a block, that is then discarded. This can lead individual miners to join the malicious mining pool, in order to not be excluded from reaping the rewards of mining. While these attacks still exists, popular blockchain networks such as ethereum have already implemented some countermeasures for selfish mining, especially through the change to PoS.\cite{challengesandapplications2019}\\
+
+Another attack angle are the smart contracts, which are implemented on the blockchains. The contracts may be advertised as more secure than having a middleman, yet they are also not immune to bugs and implementations that can be exploited. The biggest such hack was, when the DAO (Decentralised Autonomous Organization) \href{https://www.geeksforgeeks.org/daodecentralized-autonomous-organization-in-blockchain/}{geeksforgeeks.org}, that used the ethereum network was hacked, because of a bug in a smart contract. This severely impacted the price of the ethereum currency and also raised questions on the security of blockchain networks.\cite{geeksDAO}\\
+
+These are just some of the security issues that blockchain technology faces. As already stated, it is not possible to foresee every possible attack that can be done, it is rather an incremental process to harden the security of a system.
+
+
+
+
 
 \newpage
 \chapter{Opportunities of the Web 3.0}
