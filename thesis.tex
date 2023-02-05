@@ -99,7 +99,7 @@
 %Left header shows chapter and chapter name, will not display on first chapter page use \ihead*{\leftmark} to show on every page
 \ihead{\leftmark} 	
 %\ohead*{\rightmark}	%optional right header
-\ifoot*{Student}		%left footer shows student name
+\ifoot*{Gabriel Karl Hübner}		%left footer shows student name
 \ofoot*{\thepage}		%right footer shows pagination
 %---------------------------------------------------------------------
 
@@ -123,7 +123,7 @@
 
 \hspace*{-1.0cm} {\LARGE \textbf{Web 3.0\\}}
 \vspace{0.2cm}
-\hspace*{-1.0cm} Definition, Challenges and Opportunities\\
+\hspace*{-1.0cm} Challenges and Opportunities from the perpective of blockchain technologies\\
 
 \vspace{2.0cm}
 
@@ -147,7 +147,7 @@
 
 \hspace*{-1.0cm} \textbf{Author:} \\
 \vspace{0.2cm}
-\hspace*{-1.0cm} Gabriel Hübner \\
+\hspace*{-1.0cm} Gabriel Karl Hübner \\
 
 \vspace{0.7cm}
 
@@ -298,7 +298,14 @@ A further feature of the web 3.0 is to enhance security and the privacy of users
 
 Another term, which frequently comes up, when searching for definitions of the web 3.0 is the "3d web", which refers to the use of 3d graphics in the web. This could mean, that the web could be enhanced into an immersive experience with the use of augmented and virtual reality.\cite{education2011}\\
 
-A simple architecture for the web 3.0 could look as depicted in figure XXXX. The key difference is, that instead of a database, as currently in the web 2.0 a blockchain is used. In this case it is the widely popular etherum blockchain.\cite{newstack}
+A simple architecture for the web 3.0 could look as depicted in figure 2.2. The key difference is, that instead of a database, as currently in the web 2.0 a blockchain is used. In this case it is the widely popular etherum blockchain.\cite{newstack}
+
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=12cm,keepaspectratio]{images/architecture_web3.png}
+	\caption{Architecture web 3.0}
+	\label{fig:architecture-web3}
+\end{figure}
 
 %\begin{figure}[H]
 %	\centering
@@ -309,7 +316,7 @@ A simple architecture for the web 3.0 could look as depicted in figure XXXX. The
 
 
 From these definitions, it should be easy to see, that the web 3.0 is still a work in progress.\\
-To better understand what the web 3.0 is, it is necessary, to look at the technologies, which enable it. In the next chapter the underlying technologies of the web3.0 will be presented.
+To better understand what the web 3.0 is, it is necessary, to look at the technologies, which enable it. The focus of this paper lies on blockchain technologies, which will be presented and further discussed in the coming sections.
 
 
 \newpage
@@ -375,7 +382,7 @@ Decentralised applications are built on decentralised networks. They work, by co
 There still are a multitude of challenges to overcome, before the web 3.0 can be realised. The first challenge would be a clear definition of the term, which is not the case at the time of writing this paper, as already mentioned in section 2.2.\\
 This section has a focus on the challenges blockchain technology has yet to overcome, before it can fulfill all the goals, which web 3.0 promises. The paper "A Survey of Blockchain From the Perspectives of Applications, Challenges, and Opportunities" \cite{challengesandapplications2019} provides a great outline for the challenges blockchain technologies face. This paper will expand the outline with recent discoveries and other perspectives, as well as possible solutions to the challenges of the web 3.0.
 
-\subsection{Energy Consumption}
+\section{Energy Consumption}
 A major point of blockchain and web 3.0 technologies is their energy consumption. Especially since the current energy crisis has already had an impact on miners of cryptocurrency. For many mining is not feasible anymore, since the energy costs already outweigh the returns miners get from creating new blocks. This in turn lessens the decentralization of a blockchain, since mining at this point is usually only possible for owners of large mining-farms.\\\\
 The current used consensus algorithm in bitcoin is the PoW algorithm. This algorithm has already been proven to be highly unsustainable and it consumes large amounts of energy to run. As many many compete for creating a new block and appending it to the chain a lot of computing power is lost, because of it. This lost computing power can be translated to lost electricity. Since global warming is on the rise and the need for renewable energy rises, this model for a consensus algorithm will not be fruitful in the long run. The website \href{https://ccaf.io/cbeci/index}{ccaf.io} from the University of Cambridge offers a tracker for the energy consumption of bitcoin. The annualised consumption, at the time of writing this paper counts over 109 terawatt hours of electricity. As a comparison, the country Austria with a population of nearly 9 million people as stated on \href{https://www.statistik.at/statistiken/bevoelkerung-und-soziales/bevoelkerung/bevoelkerungsstand/bevoelkerung-zu-jahres-/-quartalsanfang}{statistik.at}, has a annual energy consumption of about 72 terrawatt hours, as stated on \href{https://de.statista.com/statistik/daten/studie/325788/umfrage/stromverbrauch-in-oesterreich/#:~:text=Im%20Jahr%202021%20wurden%20innerhalb,der%20Kraftwerke%20und%20die%20Netzverluste.}{statista.com}, at the time of writing this paper. The "Cambridge Bitcoin Electricity Consumption Index" \href{https://ccaf.io/cbeci/index}{ccaf.io}, also provides data about the greenhouse gas emissions, that are produced by the bitcoin network. The current estimate of annualised emissions are at over 55 megatons of carbon dioxide emissions. This further proves, that a new model for a consensus algorithm is needed, to be more efficient in terms of the energy needed to create new blocks and validate transactions.\\
 An interesting comparison can be made, when bitcoin is compared against standard payment methods with fiat currency, such as a VISA credit card. The Bitcoin network uses far more energy per transaction as the VISA credit card. About 100 000 VISA transactions can be done for the egergy cost of about one third of the amount, that would be needed for a single Bitcoin transaction. \cite{challengesandapplications2019}
@@ -383,7 +390,7 @@ The consensus algorithm that decreases the energy cost of transactions is the Po
 
 %https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8805074
 
-\subsection{Performance and Scalability}
+\section{Performance and Scalability}
 Since blockchain technologies have gained a huge amount of popularity in the recent years, a factor that needs to be considered is the performance of blockchain networks, as well as the scailability of the systems. The amount of data transferred daily over the world wide web is substantial and ever increasing as more and more users create and consume content. The questions is, if the blockchain technology can satisfy the expectations of users for a highly scaleable network with low latency and high throughput. The scalability trilemma is, that there is always a trade off between security, decentralization and scalability as is shown in Figure 3.1. The ethereum network also addresses this problem. This means, that not all of these three attributes cannot all be implemented at the same time, without one of these attributes being compromised. \cite{ethereumvision}
 
 \begin{figure}[H]
@@ -400,7 +407,7 @@ The PoW mechanism of Bitcoin for example offers a high scalability. The Problem 
 Since the Ethereum network has switched from the PoW mechanism to the PoS mechanism, it offers many advantages over the traditional implementation, but there are also the known trade offs with the switch too the new consensus mechanism. As already mentioned the cost for the energy consumption is highly reduced with the PoS algorithm. Another benefit is the higher speed of transactions, where ethereum promises thousands of transactions per second. Some argue that the trade off lies then in the decentralization of the network, however ethereum claims, that that is not the case, since economies of scale do not apply to the PoS mechanism, as they do for the PoW mechanism, making the network more decentralized in the process.\cite{pos}
 
 
-\subsection{Privacy and Ownership}
+\section{Privacy and Ownership}
 Another major point of the web 3.0 and blockchain technologies is privacy. It is common knowledge, that big industries, such as facebook and google sell user data to other companies in order to run their business. As the common saying goes "If there is no product, you are the product". One of the goals of the next generation of the web is to enable better privacy for the users of the web. A way to achieve this goal is with blockchain technologies. The idea behind using a blockchain to enable better privacy for clients, is to store data on the blockchain, rather than on a centralised database. This would mean, that data is then not owned by the owner of the database, but, in the case of a dezentralised network, the data is owned by the creator of the data. However, as already mentioned in the previous chapter, storing the entire content of a website in the blockchain is not feasible, because the blocksize in a blockchain is limited and cannot allow for all data to be hosted on-chain.\\\\
 
 The paper "Decentralizing Privacy: Using Blockchain to Protect Personal Data" \cite{privacy} proposes a solution to this problem, which will be further explained in this chapter. The main aspects of the proposed solution are as follows:
@@ -413,7 +420,7 @@ The entities in the proposed solutions are mobile phone users, that want to down
 
 This could be one possible solution to enable better privacy for the users of the world wide web and ensure, that private user data is not accessed without permission.
 
-\subsection{Interoperability}
+\section{Interoperability}
 Another big topic when it comes to blockchain technology is the interoperability between different implementations. At the time of writing this paper there are already a multitude of different blockchain implementations. The exact number of how many blockchains there are is uncertain, but it can be estimated that there are more than thousand, maybe several thousand implementations of blockchains out there. Thus far, there is no standardised protocoll, that enables different blockchains to communicate and operate with each other. The main application of blockchains, are chains, which are built for the purpose of creating new cryptocurrencys. Arguably, there is some interoperateability provided for cryptocurrency, since they can be exchanged for one another on sites such as \href{https://www.coinbase.com/}{coinbase.com}. However, as far as other web 3.0 applications are concerned, there is still no standard, through which interoperateability can be achieved. \cite{challengesandapplications2019}\\
 
 The paper "Make Web3.0 Connected"\cite{connected2022}, has its focus on the problem of interoperability and will be further discussed in this section.
@@ -429,7 +436,7 @@ The focus of the aforementioned paper lies on the third enabler of the web 3.0, 
 
 This new technology could make the interoperability between different blockchains possible. If it gains popularity and becomes a standard in the field remais to be seen.
 
-\subsection{Fairness and Security}
+\section{Fairness and Security}
 As well as every other technology, that is used on the web, blockchains are also prone to cybersecurity attacks. To mitigate such attacks is always difficult, since it is impossible to foresee all possible angles of attack. Especially in cryptocurrency implementations of blockchains, such attacks could be devastating, since users would not only lose data, but valuable assets as well, which could threaten their livelihood.\\
 A well known and widespread attack on blockchains is the so-called 51\% attack. This attack works, if a attacker or a group of multiple attackers gain a majority of the blockchains hashrate. Once the majority is achieved, the attackers can change vital data that is stored on the blockchain. Another angle of attack is called "Selfish mining", this is done by mining pools, which are several miners, that are joined together to mine blocks more efficiently. The attack works by waiting before broadcasting a successfully mined block to the entire network. The attackers can then mine additional blocks, while regular miners still try to mine a previous block on another branch of the system. Once certain criteria are met, the attackers broadcast the mined blocks to the rest of the network and their blocks get accepted, because they have a higher complexity and length, than the block of regular miners, who have still mined a block, that is then discarded. This can lead individual miners to join the malicious mining pool, in order to not be excluded from reaping the rewards of mining. While these attacks still exists, popular blockchain networks such as ethereum have already implemented some countermeasures for selfish mining, especially through the change to PoS.\cite{challengesandapplications2019}\\
 
@@ -438,11 +445,54 @@ Another attack angle are the smart contracts, which are implemented on the block
 These are just some of the security issues that blockchain technology faces. As already stated, it is not possible to foresee every possible attack that can be done, it is rather an incremental process to harden the security of a system.
 
 
-
-
-
 \newpage
 \chapter{Opportunities of the Web 3.0}
+This chapter will present the opportunities of the web 3.0 and therefore the many different fields of applications for blockchain technologies. As already mentioned, cryptocurrency, such as ethereum and bitcoin are one field of application for blockchain technology, however they are not to be confused with the term blockchain itself.
+
+\section{Energy sector}
+The application of web 3.0 and blockchain technologies in the energy sector is not meant to improve the harnessing of electrical power itself. As already mentioned in a previous chapter, blockchains consume a lot of energy and are therefore not a model that reduces the amount of energy needed for a system to run. However, PoS blockchains already take a step into the direction of reducing the amount of energy needed to run a blockchain, and that at a significant level. The application of blockchain technologies in the energy sector is rather focused on the management of a distributed market. With more and more people investing in, for example, the photovoltaic industry, the management of these widespread entities has become a non-trivial task. Here blockchain technologies could provide a better way to store and manage data in the energy field, than a regular centralised system. The benefits of the blockchain technology would especially be useful, to ensure the transparency and the management of data access of a energy system, as well as proper voltage control.There is a proposal for a system, that has these properties, this makes use of a mixture of a public and private blockchain. The public blockchain would be needed to ensure transparency in the system, as well as a way of data storage and to verify the consistency of the system. It would be responsible to ensure security and the intregrity of data. The private blockchain on the other hand, would be needed to verify the accuracy of transactions. As already mentioned, another application could be the control of the decentralised energy-grid.This relates to the problem of how users of photovoltaic energy need to upload their generated excess power to their local energy grid. This process needs to be managed carefully in order to prevent energy spikes on the grid, which can lead to a variety of problems. Therefore the power that is produced by decentralised entities needs to be regulated in a meaningful way. This can be achieved through the use of smart contracts on a blockchain. The contracts themselves could be programmed, in a way that selects nodes of the blockchain network to act as a regulator for the voltage during a certain control period. The benefit, in comparison to a centralised system, would be, that there is no need for a separate entity, that is responsible to control the voltage, since the smart contract would take care of the problem. This approach is based on a private blockchain and therefore not free of the limitations of such a system. Another proposal for energy management, would be the implementation of a smart grid. This would offer a lot of benefits for consumers, since they could manage their own individual energy supply and sell their surplus energy as they see fit. In this system, they would gain a certain amount of a cryptocurrency, fro the sale of their energy. The main functions of this project would be the recording of data, that is generated when energy is traded and to control the energy that is generated.\cite{energy}
+
+\section{Healthcare}
+The healthcare sector needs to manage large amounts of data, to keep track of patient related personal information, as well as medical records among loads of other data. The problem with the current centralised systems, which manage such data is that they are a single point of failure. Another problem is that many different medical institutions manage their own data, which creates lots of duplicated information and discourages the aspect of collaboration. A further problem, is the need for privacy and data ownership of medical records. Blockchains with their inherent properties of being a network, that promotes security, privacy and transparency could lead to a better governance of the data in  the healthcare sector. This has sparked a lot of interest and research in this field. This section will present some of the possible applications and solutions to the aforementioned problems.\\
+One of the most popular applications of blockchain technologies in the healthcare sector is the management of patient data. As of now, this information is usually managed by humans, which can lead to mistakes and inconsistencies, produced by human-error. Often a separate entity, such as a insurance department is needed as well. This leads to an increase in the time it takes to access needed medical records, as well as an increase in the complexity of the system. To administer the proper care and treatments for individual patients, with different medical histories, is crucial. The information needed to administer the correct treatment of a patient could be stored on a blockchain, to reduce the amount of duplicate information. Duplicate information, is for example generated, whenever a patient switches to a different medical institution, where they have to enter all their personal data again, which produces additional costs. A blockchain network, which has proper access protocols configured, could make it possible for many health professionals to access the information of a patient, without the need to generate this data anew. Costs in the sector would therefore be reduced, since tests from many different facilities would not have to be repeated, since they are stored on the blockchain. Smart contracts can be used to ensure that only authorized access is granted and that data is not used or accessed in a malicious way.
+Another application in the healthcare sector is the management of the drug supply chain. There are lots of low quality and counterfeit drugs circulating around the world and a significant number of deaths, that are caused by the use of these. Blockchain technologies could be used to monitor the distribution and production of drugs on a supply chain, which could help, by making the whole process more transparent and to detect modified or altered drugs. The immutability and timestamps of a blockchain would ensure that the data, that is saved on the blockchain cannot be modified and would therefore increase the security of the system.
+Another benefit of the blockchain in the medical sector would be to further research in the field. The blockchain could make the data collection, which is collected in the process of clinical trials more trustworthy. The technology would also ensure the integrity of the provided data and help to reduce the amount of incorrect data.
+Through smart contracts and the use of cryptographic keys (e.g a private and a public key), the access to medical records of a patient can be better managed. For example in the case of a medical emergency, it is crucial, that the medical data is readily available to the healthcare professionals which administer the treatment. In such a scenario time is of the essence and proper access and permission management can lead to a significant reduction of the time, that is needed to access such records, as well as save the life of the patient.\cite{medicalsector}\\
+
+These are just some of the benefits and possible applications of using blockchain technology in the healthcare sector. There are already a significant number of scientific publications in this field, which could lead to a more rapid developement of these technologies in this sector.
+
+\section{Voting}
+In many countries the voting process is still far from being fully digitalized and relies on the honesty and collaboration of human examiners. This produces significant costs, since a lot of the analysis of individual votes must be done by hand and is prone to human-error. Voting fraud is still a major issue, especially, when voting relies on the use of centralised systems, that are operated by members of a specific government party. This allows for backdoors in voting systems, that can be exploited and can change the outcome of an election and therefore the future of a country. Blockchain technology can offer benefits to a voting process, because of the immutable nature of the technology.\\
+One approach that can be used to get to a decentralized voting system is described in the paper "De-Centralized Voting System using Blockchain"\cite{voting}. In this paper a centralised server is used to manage the verification of eligible voters. To enhance the security of the system, two-factor- authentication is used in the approach. Then they propose a framework, that is divided into three phases. The phases are the Pre-Election, the Election itself and the Post-Election.
+\begin{itemize}
+    \item Pre-Election Phase - Here a smart contract is created with all the necessary details of the current election. Then election organizers can register new voters or invite existing voters to cast their vote. It is necessary, that every voter has an unique id, which is assigned by the platform. After a voter is verified as eligible to vote in an election, their respective wallet address is added to their voter data.
+    \item Election Phase - In this phase voters can cast their vote via a transaction to the blockchain network. It is notable, that a vote count and data for analysis on the current election can be retrieved at any time, using special view methods in the smart contract.
+    \item Post-Election Phase - This is the last phase of the process, here the window, which allows for voting is closed and all ids of registered voters are made public, along with the results of the election.
+\end{itemize}
+The proposed approach uses 4 modules, which are the smart contracts, that are created for each individual election, a central server, that is used to manage the authentication of the voters, a user interface for voters and a Organisation Server, that is managed by the organizers of an election. A architecture, that depicts how such a voting system could look like, is depicted in figure 4.1. \cite{voting}
+
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=17cm,keepaspectratio]{images/architecture_voting.png}
+	\caption{Architecture for a voting system}
+	\label{fig:architecture-voting}
+\end{figure}
+
+\section{Identity Management}
+Another useful application of blockchain technologies is to use them as a tool for verifying the identity of a person. Ownership of of personal information is a big topic, especially with how private data is treated currently. If a user registers to a site with a centralised server, the personal information of the user is often handled in a way, that is neither conform with current regulations, nor does a user have full control over how their data is passed to other sites or entities. Blockchain technologies can address these problems. The benefit of a blockchain being immutable and transparent can make it possible for every user to see exactly, which data of the user has been accessed. Other benefits would be, that permissions regarding who can access private information can be changed and that data is owned by the user, rather than by an organisation.\\
+The paper "BIdM: A Blockchain-Enabled Cross-Domain Identity Management System" \cite{identity} describes a system, which can improve the management and privacy of personal data. The proposed solution in the paper has the following functions:
+\begin{itemize}
+    \item Identity registration - At registration a public key is provided then the specified identifier is bound to it
+    \item Identity Update - The relationship between the public key and identifier is updated
+    \item Identity Authentication - Check if identifier and public key match
+    \item Identity Revocation - the identifier is unbound from the public key
+\end{itemize}
+With these functions and their proposed solution a cross-domain identity management system can be realised.\\
+If this implementation gains popularity and is further developed to be used as a web 3.0 technology remains yet to be seen.\\\\
+
+This concludes a short overview of some of the blockchain technology applications, that could be implemented in the web 3.0. This is, of course, just a small subset of all web 3.0 applications that are currently discussed and further research is needed in many fields until these applications are fully functional and can be used for daily tasks in the next generation of the web.
+
+
 
 \newpage
 \chapter{Related Work}
