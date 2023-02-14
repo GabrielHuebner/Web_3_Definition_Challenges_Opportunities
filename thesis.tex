@@ -194,14 +194,16 @@ Date: \hspace{6cm} Signature:\\
 % --- English Abstract ----------------------------------------------------
 \cleardoublepage
 \chapter*{Abstract}
-Through the popularity of cryptocurrency, blockchain technologies have gained a lot of traction. These technologies play a huge part in the Web 3.0, as they are able to make decentralised applications possible. The current web is based on mostly centralised networks, which puts a lot of data into the hands of major corporations, such as Google. The decentralised web, could help users to gain full ownership of their own private data. This Bachelor thesis will explain what the Web 3.0 could be and what role blockchain technologies play in order to achieve this goal.\\\\
+Through the popularity of cryptocurrency, blockchain technologies have gained a lot of traction. These technologies play a huge part in the Web 3.0, as they are able to make decentralised applications possible. The web by itself is decentralized, because there are many different servers/companies, that offer services to their users. However, big, centralized service providers, such as Google still dominate the Web. Therefore, the aforementioned companies have got a lot of user data in their hands. It can be argued, that a single entity/company, holding such a big quantity of user data, can influence their customers, by using their personal information. People may feel insecure about not knowing how their data is handled and who has access to it. The decentralization of the web could improve upon the privacy of users, by offering blockchain based applications, where users can either allow or deny requests to their personal data.\\
+Blockchain technologies could improve the way data is handled in many different fields, such as the energy sector, the healthcare sector, voting and identity management. However there are still challenges that need to be overcome, before many of these applications become possible. One of these challenges is the energy consumption of blockchains, which can be drastically improved, by switching from the Proof of Work (PoW) to the Proof of Stake (PoS) algorithm. Other challenges are the trade off between security, performance and scalability, storing data on the blockchain, interoperability between different blockchain technologies and fairness and security in blockchain networks. \\
+This Bachelor thesis combines many different papers, that deal with the challenges and opportunities of the Web 3.0/blockchain technologies. Some papers were taken as a point of reference and were expanded with more recent discoveries from other papers and different perspectives.
 
 
 % --- German Abstract ----------------------------------------------------
 \cleardoublepage
 \chapter*{Kurzfassung}
-(Z.B. ``Diese Arbeit untersucht...'')
-
+Durch die Popularität von Kryptowährungen haben Blockchain Technologien viel Aufmerksamkeit erlangt. Diese Technologien spielen eine große Rolle im Web 3.0, da sie dezentrale Applikationen möglich machen. Das Web selbst ist dezentral, da es viele verschiedene Server/Firmen gibt, die ihre Dienste Nutzern zur Verfügung stellen. Jedoch dominieren große, zentrale Dienstanbieter, wie zum Beispiel Google das Web. Diese Dienstanbieter haben dadurch Zugriff auf eine große Menge an Nutzerdaten. Es kann argumentiert werden, dass eine einzelne Entität/Firma, die eine große Menge an Nutzerdaten hat, Ihre Benutzer beeinflussen kann. Benutzer könnten sich damit unsicher fühlen, dass sie nicht genau wissen, was mit ihren Daten passiert und wer Zugriff darauf hat. Die Dezentralisierung des Web könnte die Privatsphäre von Nutzern, durch den Einsatz von Blockchain Technologien, mit denen Nutzer entscheiden können, wer Zugriff auf ihre Daten hat, verbessern.\\ Blockchain Technologien könnten die Art, wie mit Daten umgegangen wird in vielen Bereichen, wie zum Beispiel dem Energiebereich, dem Gesundheitsbereich, bei Wahlen, und dem Identitäts-management, verbessern. Bevor viele von diesen Applikationen umgesetzt werden können, gibt es aber noch einige Herausforderungen, die bewältigt werden müssen. Eine dieser Herausforderungen ist der Energieverbrauch von Blockchains, der durch den Wechsel von einem Proof of Work (PoW) Algorithmus, zu einem Proof of Stake (PoS) Algorithmus, drastisch verbessert werden kann. Andere Herausforderungen sind, zum Beispiel, der Kompromiss zwischen Sicherheit, Leistung und Skalierbarkeit, das Speichern von Daten auf der Blockchain, die Kompatibilität zwischen verschiedenen Blockchain Technologien und Fairness und Sicherheit in Blockchain Netzwerken. \\
+Diese Bachelorarbeit kombiniert viele verschiedene Werke, die sich mit den Herausforderungen und Möglichkeiten von Web 3.0/Blockchain Technologien auseinandersetzen. Manche Werke wurden dabei als Referenzpunkt verwendet und mit Erkenntnissen von neueren Werken erweitert, sowie mit verschiedenen Blickwinkeln.
 
 % --- Abbrevations ----------------------------------------------------
 \chapter*{List of Abbreviations}
@@ -236,7 +238,7 @@ PoW     - Proof of Work
 \chapter{Introduction}
 \label{chap:intro}
 
-In recent years, especially through the development of cryptocurrencies and blockchain technology, the term "Web 3.0" (sometimes also referred to as the semantic web and the next generation of the web) has gained more and more traction. The Web 3.0 is the next generation of the web after the web 2.0. The definition of this web is not clear at the time\cite{techtarget}. However there are several goals the Web 3.0 is meant to achieve, such as openness and  decentralization\cite{avast}. This Bachelor thesis will present some of the definitions for the Web 3.0 and the history of the web from web 1.0 to Web 3.0. The main focus of this Bachelor thesis is on one of the technologies that is part of the next generation of the web, the blockchain. The Bachelor thesis will explain the blockchain technology and some of the related technologies, such as "smart contracts" and "DApps". Then it will list some of the challenges, that the Web 3.0 and blockchains still have to face, as well as possible applications of the blockchain technology. The questions this Bachelor thesis wants to answer, are therefore: What is the Web 3.0? What are its challenges and opportunities, from the perspective of blockchain technologies?
+In recent years, especially through the development of cryptocurrencies and blockchain technology, the term "Web 3.0" (sometimes also referred to as the semantic web or the next generation of the web) has gained more and more traction. The definition of this web is not clear at the time\cite{techtarget}. However there are several goals the Web 3.0 is meant to achieve, such as openness and  decentralization\cite{avast}. This Bachelor thesis will present some of the definitions for the Web 3.0 and the history of the web from web 1.0 to Web 3.0. The main focus of this Bachelor thesis is on one of the technologies that is part of the next generation of the web, the blockchain. The Bachelor thesis will explain the blockchain technology and some of the related technologies, such as "smart contracts" and "DApps". Then it will list some of the challenges, that the Web 3.0 and blockchains still have to face, as well as possible applications of the blockchain technology. The questions this Bachelor thesis wants to answer, are therefore: What is the Web 3.0? What are its challenges and opportunities, from the perspective of blockchain technologies?
 
 \subsection{Contribution}
 
@@ -268,10 +270,10 @@ There are several papers, that are used in chapter 4 "Challenges of the Web 3.0"
 
 \newpage
 \chapter{Web 3.0}
-The first question, that emerges, when talking about the Web 3.0 (also called the Web3), is what it is by definition. There is neither an easy, nor a precise answer to that question, since there are many different definitions of the term. To better understand what the Web 3.0 is and what the term stands for, we can analyse the history of the two previous iterations of the web, the web 1.0 and web 2.0.
+The first question, that emerges, when talking about the Web 3.0 (also called the Web3), is what it is by definition. There is neither an easy, nor a precise answer to that question, since there is no clear definition of the term at the time\cite{techtarget}. To better understand what the Web 3.0 is and what the term stands for, we can analyse the history of the two previous iterations of the web, the web 1.0 and web 2.0.
 
 \section{History of the Web}
-First of, it is important to understand, that the evolution of the web 1.0 to the web 2.0 did not take place at a concrete time. It was rather a slow progress, where certain websites gradually implemented additional functionalities and technologies, eg. AJAX. \cite{oreilly2007}\\
+First of, it is important to understand, that the transformation of the web 1.0 to the web 2.0 did not take place at a concrete time. It was rather a slow progress, where certain websites gradually implemented additional functionalities and technologies, eg. AJAX. \cite{oreilly2007}\\
 
 \textbf{Web 1.0}\\
 
@@ -288,7 +290,7 @@ Figure 2.1 depicts a screenshot of the "first website", which was recreated and 
 \end{figure}
 
 \textbf{Web 2.0}\\\\
-The term for the web 2.0 was first coined in 2004 by Dale Dougherty and Craig Cline in a conference with Tim O'Reilly. The key difference to the first iteration of the web, is that the second web allows read and write access instead of mostly read access. This could also be described as the first "dynamic" web, in contrast to the "static" web 1.0. Through "social-media" websites, "blogs", etc. users can generate content on a website, this leads to the terms "participative" web and "people-centric" web, for the web 2.0. \cite{hiremath2016}
+The term for the web 2.0 was first introduced in 2004 by Dale Dougherty and Craig Cline in a conference with Tim O'Reilly\cite{hiremath2016}. The key difference to the first iteration of the web, is that the second web allows read and write access instead of mostly read access. This could also be described as the first "dynamic" web, in contrast to the "static" web 1.0. Through "social-media" websites, "blogs", etc. users can generate content on a website, this leads to the terms "participative" web and "people-centric" web, for the web 2.0. \cite{hiremath2016}
 Tim O'Reilly describes the web 2.0 as network with "rich user experiences", which are provided by websites from major corporations, such as the Google search engine. One of the key components is AJAX, which is composed of several technologies, such as XHTML and CSS to represent the data on website, the Document Object Model, XML and XSLT, XMLHttpRequest for asynchronous data retrieval and JavaScript to bind everything together.\cite{oreilly2007}
 Nowadays there are of course several other or newer technologies and further developments of the web 2.0, however the core-concepts remain roughly the same.
 This chapter should provide a general understanding of the history of the web, as well as a demarcation of the web 2.0 to the Web 3.0.
@@ -352,8 +354,8 @@ Blockchain falls into a category of a distributed ledger technology. This techno
 
 The blocks of a blockchain differ with the specific implementation of a blockchain, however some basic elements are always roughly the same. In a blockchain each block has a reference to its parent/previous block, where the reference is in form of a cryptographic hash of a previous block, which is stored in the block header. A cryptographic hash is a sort of algorithm, that transforms a set of data into a string, that is always the same length. The reference to the previous block is always there, except for the first block in a blockchain (also called the genesis-block). \\
 In Figure 2.3 an example of a blockchain architecture is depicted. The block header usually contains a version number, a timestamp, a field for the hashed value of all transactions contained in the block, a nonce - which is important for a security aspect of the blockchain, as well as creating new blocks, a field for the threshold of a valid block hash and as already explained, the parent block hash, which links the preceding block.\\
-The decentralized part of the blockchain is then made possible by people who provide their own network bandwidth and computational power to the network. These people are called miners and represent the nodes of a network. The miners are responsible for adding new blocks to the blockchain. In the case of cryptocurrency, they are therefore responsible for the validation of transactions in the network. As a reward for the participation of miners, they get a certain amount of the cryptocurrency e.g. Ethereum, whenever a new block is created. The process of validating the blockchain is called the consensus process, in a public blockchain, each user can participate in this process.\\
-The first, well known consensus strategy, which is also used in the Bitcoin network is the Proof of Work (PoW) strategy. This requires complex mathematical calculations to be done, which also creates a number of problems e.g. energy cost, that will be addressed in chapter 3.\\
+The decentralized part of the blockchain is then made possible by people who provide their own network bandwidth and computational power to the network. These people are called miners and represent the nodes of a network. Miners have the responsibility of adding new blocks to the blockchain. In the case of cryptocurrency, they are therefore needed to validate transactions in the network. As a reward for the participation of miners, they get a certain amount of the cryptocurrency e.g. Ethereum, whenever a new block is created. The process of validating the blockchain is called the consensus process, in a public blockchain, each user can participate in this process.\\
+The first well known consensus strategy, the Proof of Work (PoW) strategy, is also used in the Bitcoin network. This requires complex mathematical calculations to be done, which also creates a number of problems e.g. energy cost, that will be addressed in chapter 3.\\
 Another strategy is the Proof of Stake (PoS) strategy, which addresses some of the problems of PoW, but introduces new problems of their own.\cite{blockchaingeneral}\\
 
 There are four main categories, that a blockchain can fall into:\cite{geekstypesofblockchain}
@@ -365,7 +367,7 @@ There are four main categories, that a blockchain can fall into:\cite{geekstypes
 \end{itemize}
 
 \subsubsection{Proof of Work}
-PoW is a conses mechanism/system, which is used in many blockchains. It was first introduced in the Bitcoin blockchain. The peers/miners in a network can, so to speak, vote with their respective computing power, by solving mathematical problems and then creating the appropriate blocks of the blockchain. The miners have to find the correct nonce of value of a block. When this value is then hashed with additional block parameters the value of the resulting hash has to be smaller then the momentary target value. Once the correct nonce is found, the block is created and forwarded on the network layer to all the peers in the network. This block is then validated by the other peers in the network.\cite{pow2016}
+PoW is a conses mechanism/system, which is used in many blockchains, because the first blockchain network, Bitcoin, introduced it. The peers/miners in a network can, so to speak, vote with their respective computing power, by solving mathematical problems and then creating the appropriate blocks of the blockchain. The miners have to find the correct nonce of value of a block. When this value is then hashed with additional block parameters the value of the resulting hash has to be smaller then the momentary target value. Once the correct nonce is found, the block is created and forwarded on the network layer to all the peers in the network. This block is then validated by the other peers in the network.\cite{pow2016}
 
 \subsubsection{Proof of Stake}
 The PoW mechanism has a high demand for energy among other shortcomings, which is why the PoS mechanism was developed.\\  
@@ -552,20 +554,20 @@ This Bachelor thesis offered a brief introduction into the Web 3.0 and its respe
 
 % --- List of Tables -----------------------------------------------------
 
-\newpage
-\addcontentsline{toc}{chapter}{List of Tables}
-\listoftables
+%\newpage
+%\addcontentsline{toc}{chapter}{List of Tables}
+%\listoftables
 
 % --- Appendix A -----------------------------------------------------
 
-\backmatter
-\appendix
-\begin{appendices}
-\chapter{Appendix}
+%\backmatter
+%\appendix
+%\begin{appendices}
+%\chapter{Appendix}
 
-(Hier können Schaltpläne, Programme usw. eingefügt werden.)
+%(Hier können Schaltpläne, Programme usw. eingefügt werden.)
 
-\clearpage
-\end{appendices}
+%\clearpage
+%\end{appendices}
 
 \end{document}
